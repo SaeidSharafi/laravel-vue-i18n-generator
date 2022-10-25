@@ -1,5 +1,5 @@
 {
-    "name": "librenms/laravel-vue-i18n-generator",
+    "name": "saeidsharafi/laravel-vue-i18n-generator",
     "description": "Generates a vue-i18n compatible include file from your Laravel translations.",
     "license": "MIT",
     "keywords": [
@@ -14,9 +14,13 @@
         {
             "name": "Tony Murray",
             "email": "murraytony@gmail.com"
+        },
+        {
+            "name": "Saeid Sharafi",
+            "email": "saeed_sharafi12@yahoo.com"
         }
     ],
-    "homepage": "http://github.com/librenms/laravel-vue-i18n-generator",
+    "homepage": "http://github.com/SaeidSharafi/laravel-vue-i18n-generator",
     "require": {
         "php": ">=5.5.0",
         "ext-json": "*",
