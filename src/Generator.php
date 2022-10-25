@@ -153,6 +153,9 @@ class Generator
         foreach ($this->filesToCreate as $fileName => $data) {
             $fileToCreate = $jsPath . $fileName . '.js';
             $createdFiles .= $fileToCreate . PHP_EOL;
+            if($multiLocales){
+                $data = $data[$fileName];
+            }
             $jsonLocales = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . PHP_EOL;
             if (json_last_error() !== JSON_ERROR_NONE) {
                 throw new Exception('Could not generate JSON, error code '.json_last_error());
